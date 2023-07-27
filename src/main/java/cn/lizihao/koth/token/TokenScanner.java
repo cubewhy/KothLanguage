@@ -30,6 +30,7 @@ public class TokenScanner {
         keywords.put("class", TokenType.CLASS);
         keywords.put("func", TokenType.FUNCTION);
         keywords.put("while", TokenType.WHILE);
+        keywords.put("library", TokenType.LIBRARY);
     }
 
     public TokenScanner(String source) {
@@ -112,12 +113,6 @@ public class TokenScanner {
                 break;
             case '"':
                 string();
-                break;
-            // match keywords
-            case 'o':
-                if (match('r')) {
-                    addToken(TokenType.OR); // keyword "or"
-                }
                 break;
             default:
                 if (isDigit(c)) {
