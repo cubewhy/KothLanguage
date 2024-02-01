@@ -1,5 +1,7 @@
 # Koth
 
+> 只是整活仓库,不会进行更新!
+
 This programming language is under develop, welcome open issues
 
 ## The programming language developed for liZiHao
